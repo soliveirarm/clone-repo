@@ -21,7 +21,7 @@
 ## Download the script
 
 <div align="center">
-    <a href="#">
+    <a href="https://github.com/soliveirarm/clone-repo/releases/download/1.0/clone-repo.py">
         <img src="./download-button.png"/>
     </a>
 </div>
