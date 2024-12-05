@@ -3,8 +3,12 @@ from pathlib import Path
 from os import path, makedirs, system
 from time import *
 
-PROJECTS_PATH = f"{Path.home()}/Desktop/projects"
+PROJECTS_PATH = f"{Path.home()}/Desktop/Projects"
 USERNAME = "soliveirarm"
+
+
+def main():
+    clone_repo()
 
 
 def clone_repo():
@@ -25,11 +29,15 @@ def clone_repo():
         # sees if the repo exists on github
         if path.exists(REPO_FOLDER):
             print(f"github.com/{USERNAME}/{REPO_NAME}.git cloned!\n")
-            print("Your project is gonna open on VS Code...")
             sleep(1)
-            system(f"code {REPO_FOLDER}")
-            exit()
-            break
+
+            open_with_code = input("Do you want to open with code? (y/n): ")
+
+            if open_with_code == "y":
+                print("Your project is gonna open on VS Code...")
+                sleep(1)
+                system(f"code {REPO_FOLDER}")
+            return
         else:
             print(
                 "The repository you tried to clone probably doesn't exist, try again\n"
@@ -37,4 +45,5 @@ def clone_repo():
             sleep(1)
 
 
-clone_repo()
+if __name__ == "__main__":
+    main()
