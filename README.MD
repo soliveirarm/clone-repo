@@ -14,7 +14,7 @@
     pip install requests
     ```
 
-PS: VS Code as your IDE (if you wanna open it with code after it's cloned)
+**: VS Code as your IDE (if you wanna open it with code after it's cloned, totally optional tho)
 
 ## How to use
 
@@ -37,7 +37,7 @@ PS: VS Code as your IDE (if you wanna open it with code after it's cloned)
 
 ## Download the script
 
-<a href="https://github.com/soliveirarm/clone-repo/releases/download/2/clone_repo.py">
+<a href="https://github.com/soliveirarm/clone-repo/releases/download/2.0/clone_repo.py">
     <img src="./github/download-button.png"/>
 </a>
 
